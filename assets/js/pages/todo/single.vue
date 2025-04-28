@@ -1,4 +1,6 @@
 <script setup>
+import { Link } from '@inertiajs/vue3'
+
 const props = defineProps({
       todo: {
         type: Object,
@@ -9,7 +11,11 @@ const props = defineProps({
 
 <template>
 
-<div>
+<div class="container mx-auto">
+    <nav class="mt-8">
+      <Link href="/todos" class="text-blue-800 md:text-lg mr-4">Lista Task</Link>
+      <Link href="/todos/create" class="text-blue-800 md:text-lg">Crea Task</Link>
+    </nav>
     <h1 class="text-5xl text-center mb-5">
         Singolo Todo
     </h1>

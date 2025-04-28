@@ -70,6 +70,7 @@ module.exports.routes = {
   // Inertia Pages (Vue + Inertia)
   'GET /todos' : 'todo/view-todos',
   'GET /todos/:id' : 'todo/view-todo',
+  'GET /todos/create' : 'todo/view-create',
 
     // USERS LIST
   'GET /users': 'user/view-users'
